@@ -1,0 +1,53 @@
+/* 
+* Responsive CSS
+*/
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  #header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 60px;
+  }
+  #mainmenu ul {
+    text-align: center;
+  }
+  #mainmenu ul li {
+    display: inline-block;
+  }
+  #mainmenu ul li a i {
+    padding-right: 0px;
+  }
+  #mainmenu ul li a span {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .inner_container {
+    width: 95%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .inner_container h3 {
+    color: var(--whiteColor);
+    line-height: 1em;
+    font-size: 25px;
+  }
+  .service {
+    flex-wrap: wrap;
+  }
+  .service_card {
+    flex-basis: 48%;
+    padding: 25px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .service_card p {
+    display: none;
+  }
+  .service_card h4 {
+    font-size: 15px;
+  }
+}

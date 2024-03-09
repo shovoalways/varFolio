@@ -1,0 +1,197 @@
+/* 
+* Variables
+*/
+:root {
+  --primaryColor: #4fe98c;
+  --darkColor: #0c1a28;
+  --bgColor: #091420;
+  --borderColor: #1f3e5e;
+  --whiteColor: #ffffff;
+}
+
+/* 
+* Common CSS
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bgColor);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+p {
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.container {
+  width: 80%;
+  float: right;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner_container {
+  background: var(--darkColor);
+  border: 1px solid var(--borderColor);
+  width: 80%;
+  padding: 60px;
+  border-radius: 20px;
+}
+.inner_container img {
+  width: 200px;
+  display: block;
+  margin-bottom: 20px;
+}
+.inner_container h3 {
+  color: var(--whiteColor);
+  line-height: 1em;
+  font-size: 35px;
+}
+.inner_container h5 {
+  color: var(--primaryColor);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.inner_container p {
+  color: var(--whiteColor);
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.inner_container .btn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  font-size: 14px;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+.inner_container .btn:hover {
+  color: var(--primaryColor);
+  background: var(--whiteColor);
+}
+
+/* 
+* Header Area CSS
+*/
+#header {
+  position: fixed;
+  width: 20%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(62deg, #c9fa84 0%, #3eb3cb 100%);
+}
+#mainmenu ul {
+  text-align: left;
+}
+#mainmenu ul li {
+  display: block;
+}
+#mainmenu ul li a {
+  display: block;
+  padding: 18px 45px;
+  color: var(--whiteColor);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+#mainmenu ul li a:hover,
+#mainmenu ul li.active a {
+  background: var(--primaryColor);
+  color: var(--bgColor);
+}
+#mainmenu ul li a i {
+  padding-right: 15px;
+}
+
+/* 
+* Service Area CSS
+*/
+.service {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.service_card {
+  background: var(--bgColor);
+  border: 1px solid var(--borderColor);
+  flex-basis: 24%;
+  padding: 35px 25px;
+  border-radius: 10px;
+}
+.service_card i {
+  color: var(--primaryColor);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.service_card h4 {
+  color: var(--whiteColor);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.service_card p {
+  font-size: 14px;
+}
+
+/* 
+* Contact Area CSS
+*/
+#contact form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#contact input,
+#contact textarea {
+  background: var(--bgColor);
+  border: 1px solid var(--borderColor);
+  padding: 12px 15px;
+  color: var(--whiteColor);
+  width: 49%;
+}
+#contact textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+}
+#contact input[type='submit'] {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  width: 200px;
+  transition: 0.5s;
+}
+#contact input[type='submit']:hover {
+  color: var(--primaryColor);
+  background: var(--whiteColor);
+}
