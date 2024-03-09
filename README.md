@@ -6,9 +6,9 @@ This repository provides the HTML, CSS, and JavaScript code used in a companion 
 
 ## ⏳ Prerequisite
 You need the following skills to start with
-- Photoshop/Figma
-- WordPress
-- Elementor
+- HTML
+- CSS
+- JavaScript
 
 
 ## 🧑‍💻 Contributors
